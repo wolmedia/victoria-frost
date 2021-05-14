@@ -41,15 +41,15 @@
                     <div class="row">
                         <div class="col-4 col-md-4">
                             <!-- <img src="./Assets/index_page/Contenedor_Dropdown.png" alt=""> -->
-                            <input type="number"  [(ngModel)]="day" name="day" class="input" placeholder="DD" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;"/>
+                            <input type="number"  style="text-align:center;" [(ngModel)]="day" name="day" class="input" placeholder="DD" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;"/>
                         </div>
                         <div class="col-4 col-md-4">
                             <!-- <img src="./Assets/index_page/Contenedor_Dropdown.png" alt=""> -->
-                            <input type="number"  [(ngModel)]="month" name="month" class="input" placeholder="MM" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;"/>
+                            <input type="number"  style="text-align:center;" [(ngModel)]="month" name="month" class="input" placeholder="MM" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==2) return false;"/>
                         </div>
                         <div class="col-4 col-md-4">
                             <!-- <img src="./Assets/index_page/Contenedor_Dropdown.png" alt=""> -->
-                            <input type="number"  [(ngModel)]="year" name="year" class="input" placeholder="AAAA" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;"/>
+                            <input type="number"  style="text-align:center;" [(ngModel)]="year" name="year" class="input" placeholder="AAAA" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==4) return false;"/>
                         </div>
                         <div class="col-12col-md-12">
                             <img src="../../assets/index_page/Contenedor_Ingresarc.png" class="pointer" alt=""(click)="enter()">

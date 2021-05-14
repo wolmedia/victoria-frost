@@ -19,7 +19,8 @@
 }
 
 body{
-    font-family: 'AntonRegular', cursive;
+    font-family: 'AntonRegular';
+    font-weight: 500;
 }
 
 .grid{

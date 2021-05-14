@@ -1,11 +1,14 @@
+
+
 import { Injectable } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CheckService {
 
-  constructor() { }
+  constructor(private cookieService: CookieService ) { }
 
 
 
@@ -14,12 +17,26 @@ export class CheckService {
   }
 
   getToken(){
-    localStorage.getItem('ASkjfwuihJKFH');
+  //  localStorage.getItem('ASkjfwuihJKFH');
+    this.cookieService.get('ASkjfwuihJKFH');
   }
 
   isLoggedIn(){
-    return !!localStorage.getItem('ASkjfwuihJKFH');
+    return !!this.cookieService.get('ASkjfwuihJKFH');
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

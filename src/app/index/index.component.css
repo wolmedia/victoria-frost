@@ -94,18 +94,21 @@
 
 .input
 {
+   
+    background:url(../../assets/index_page/Contenedor_Dropdown.png) no-repeat; 
     border: 0px solid #444444;
-    /* height:39px;
-    width:346px; */
-    background:url(../../assets/index_page/Contenedor_Dropdown.png) no-repeat right top; 
-    font-weight: 600;
-    color: white; 
-    /* padding-left:4px;  */
-    /* font-size:20px; */
-    background-size: cover;
+    font-weight: 500;
+    color: white;
     width: 100%;
-    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
 }
+
+input:focus{
+    outline: none;
+}
+
 
 input::-webkit-input-placeholder  {
     color: #ffffff;
