@@ -107,7 +107,7 @@ width: 100%;
   #section5-bg{
     background: url(../../assets/home_page/05SaborRefrescante/FONDO_Seccion.png);
     background-size: 100% 100%;
-    margin-top: 12%;
+    margin-top: -11%;
 }
 
   .botella img{
@@ -223,8 +223,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
  .azul{
-    margin: -205px auto;
-    background: #072355;
+    margin-top: -12%;
+   /*background: #072355;*/
     width: 100%;
     display: block;
     padding-bottom: 5%;
