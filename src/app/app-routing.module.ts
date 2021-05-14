@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { HomeComponent } from './home/home.component';
-import { CanAccessGuard} from './can-access.guard'
+import { CanAccessGuard} from './can-access.guard';
 
 const routes: Routes = [
   {path:"inicio", component: IndexComponent},

@@ -20,6 +20,9 @@ main {overflow: hidden;}
     background-image: url(../../assets/home_page/header/Pleca_Header.png);
 }
 
+.nav-link{
+    color: white !important;
+}
 
 .helo2{
     position: absolute;
@@ -145,6 +148,7 @@ width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .col-lg-6.col-sm-12.back {
     background: url(../../assets/home_page/09Stickers/Pleca_Division.png);
     background-size: cover;

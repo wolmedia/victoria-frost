@@ -32,7 +32,13 @@ body{
     margin: auto;
 }
 
+.pointer{
+  cursor: pointer;
+}
 
+.center{
+  text-align: center;
+}
 
 .padre {
 
@@ -70,3 +76,6 @@ body{
     }
     
   }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
