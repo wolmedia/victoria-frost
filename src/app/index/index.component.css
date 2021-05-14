@@ -14,9 +14,6 @@
     background-size: cover; 
 }
 
-.pointer{
-    cursor: pointer;
-}
 
 .logo{
     margin-top: 65px;
@@ -81,10 +78,7 @@
 
 .controls{
     text-align: center;
-
-
     max-width: 600px;
-
 }
 
 .controls img{
@@ -105,9 +99,6 @@
     height: 50px;
 }
 
-input:focus{
-    outline: none;
-}
 
 
 input::-webkit-input-placeholder  {
