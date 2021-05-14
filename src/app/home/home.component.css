@@ -1,3 +1,4 @@
+main {overflow: hidden;}
 .helo1{
     position: absolute;
     left: 0;
@@ -37,11 +38,32 @@ width: 100%;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
-    
-    z-index: -1;
 
   }
+
+  .col-sm-2.col-md-3.col-lg-3.p-0 {
+      z-index: 9;
+  }
   
+  .video-wrapper video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-wrapper source{
+    position: absolute;
+    top: -139px;
+    left: 0;
+    width: 100%;
+
+  }
+
+  
+
+
   .video-wrapper iframe{
     position: absolute;
     top: 0;
@@ -57,20 +79,285 @@ width: 100%;
     width: 100%;
 
   }
+
+
+
+
   .separator1{
       margin-top: -85px;
+      position: relative;
   }
   .separator1 img{
     width: 100%;
   }
 
+ 
 
   #section2-bg{
       background: url(../../assets/home_page/03NuevaFormula/HIELO_VECTOR.png);
-      background-size: cover;
+      margin-top: -19%;
+      background-size: 105% 100%;
+      margin-left: -2%;
+      padding: 5% 0% 23%;
   }
 
+  #section5-bg{
+    background: url(../../assets/home_page/05SaborRefrescante/FONDO_Seccion.png);
+    background-size: 100% 100%;
+    margin-top: 12%;
+}
 
   .botella img{
       width: 100%;
   }
+
+  .sabores img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 15% auto;
+}
+
+
+#section6-bg{
+    background: url(../../assets/home_page/06RenovadoMicroFiltrado/IMAGENFONDO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#section7-bg{
+    background: url(../../assets/home_page/07Productos/FONDO_Productos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -3%;
+}
+
+#section8-bg{
+    background: url(../../assets/home_page/08ScanerPantalla/FONDO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -6%;
+}
+
+#section9-bg{
+    background: url(../../assets/home_page/08ScanerPantalla/FONDO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col-lg-6.col-sm-12.back {
+    background: url(../../assets/home_page/09Stickers/Pleca_Division.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section10-bg{
+    background: #072355;
+}
+
+.textscaner {
+    color: #fff;
+    font-size: 12px;
+    padding: 5%;
+}
+
+.bg-light {
+    background-color: #2BD8F7!important;
+    z-index: 999;
+}
+
+/*nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    float: right;
+}*/
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    padding-bottom: 0px;
+}
+
+.but {
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.formula{
+    width: 80%;
+    float:left;
+    margin-top: 15%; 
+    margin-left: -23%;
+}
+
+
+.bote{
+    width: 75%!important;
+    float:right;
+    margin-right: -20%;
+}
+
+.iceleft {
+    max-width: 150px;
+     position: absolute;
+     float: left;
+     margin-top: -5%;
+}
+
+.iceright {
+    max-width: 150px; 
+    position: absolute; 
+    right:0%;
+    margin-top: -12%;
+
+}
+.icecenter {
+    width: 100%; 
+    display: block;
+    max-width: 300px;
+    z-index: 99999;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5%;
+}
+
+ .azul{
+    margin: -205px auto;
+    background: #072355;
+    width: 100%;
+    display: block;
+    padding-bottom: 5%;
+    height: 100px;
+ }
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+ .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #082355;
+}
+
+a.nav-link.active {
+    border-bottom:2px solid red;
+    border-bottom-width: medium;
+    border-radius: 3px;
+}
+
+.hal {
+    width: 50%;
+    float: left;
+}
+
+/*css media querys mobile*/
+@media (min-width:800px){
+    .menu {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    }
+    .col-lg-4.col-md-4.col-sm-12.p-5 {
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }
+
+    .carousel-control-prev {
+        right: 45px!important;
+        left: inherit;
+    }
+
+    .carousel-control-next-icon{
+        background-color: #2bd8f7;
+        color: #fff;
+        border-color: yellow;
+        border: 2px solid yellow;
+        border-radius: 0px 20px 20px 0px;
+        width: 45px;
+        height: 50px;
+    }
+    
+    .carousel-control-prev-icon {
+        background-color: #2bd8f7;
+        color: #fff;
+        border-color: yellow;
+        border: 2px solid yellow;
+        border-radius: 20px 0px 0px 20px;
+        width: 45px;
+        height: 50px;
+    }
+}
+
+@media(max-width:780px){
+    
+    .formula{
+        width: 100%;
+        float: inherit;
+        margin-top: 15%;
+        margin-left: 0%;
+        padding: 5%;
+      }
+
+      .bote{
+        width: 60%!important;
+        float: inherit;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-top: 5%;
+        display: block;
+    }
+
+    .separator1{ display: none;}
+    #section2-bg{
+        margin-top: -5%;
+    }
+    
+    .col-sm-2.col-md-3.col-lg-3.p-0 {
+        float: left;
+        width: 35%;
+        display: none;
+    }
+    .col-sm-8.col-md-7.col-lg-7 {
+        width: 65%;
+    }
+    .col-sm-2.col-md-2.col-lg-2.p-0 {
+        display: none;
+    }
+
+    #section5-bg{
+        margin-top: 0%;
+    }
+
+    .azul{
+        margin: -63px auto;
+        width: inherit;
+    }
+
+    #section6-bg{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .but {
+        max-width: 200px;
+        cursor: pointer;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 5%;
+    }
+    .iceleft {
+    
+        margin-top: -25%;
+    }
+    .iceright {
+     
+        margin-top: -29%;
+    
+    }
+    .icecenter {
+        margin-top: -8%;
+    }
+    
+}
+
+
