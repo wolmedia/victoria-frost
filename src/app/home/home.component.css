@@ -94,14 +94,29 @@ width: 100%;
     width: 100%;
   }
 
+
+  .btn-outline-success {
+    background: url(../../assets/index_page/Contenedor_Ingresar.png) no-repeat;
+    border: 0px solid #444444;
+    font-weight: 500;
+    color: #2BD8F7;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+}
  
+.img-stickers {
+    width: 150px!important;
+    display: block;
+}
 
   #section2-bg{
       background: url(../../assets/home_page/03NuevaFormula/HIELO_VECTOR.png);
       margin-top: -19%;
       background-size: 105% 100%;
       margin-left: -2%;
-      padding: 5% 0% 23%;
+      padding: 5% 0% 18%;
   }
 
   #section5-bg{
@@ -184,17 +199,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 }
 
 .formula{
-    width: 80%;
+   width: 350px;
     float:left;
     margin-top: 15%; 
-    margin-left: -23%;
+    margin-left: -8%;
 }
 
 
 .bote{
-    width: 75%!important;
+   width: 345px;
     float:right;
-    margin-right: -20%;
+    margin-right: -15%;
 }
 
 .iceleft {
@@ -243,8 +258,14 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     color: #082355;
 }
 
-a.nav-link.active {
+a.nav-link:hover {
     border-bottom:2px solid red;
+    border-bottom-width: medium;
+    border-radius: 3px;
+}
+
+a.nav-link:active {
+    border-bottom:2px solid red!important;
     border-bottom-width: medium;
     border-radius: 3px;
 }
