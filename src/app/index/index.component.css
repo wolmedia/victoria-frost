@@ -21,6 +21,7 @@
 }
 .logo img{
     width: 100%;
+    max-width: 600px;
 }
 
 .logo-cerveza{
@@ -111,6 +112,9 @@ input::-webkit-input-placeholder  {
 
 .footer img{
     width: 100%;
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
 }
 
 
