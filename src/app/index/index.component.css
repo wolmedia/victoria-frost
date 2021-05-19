@@ -21,7 +21,8 @@
 }
 .logo img{
     width: 100%;
-    max-width: 600px;
+    max-width: 445px;
+    margin-top: 0%;
 }
 
 .logo-cerveza{
@@ -84,6 +85,8 @@
 
 .controls img{
     width: 100%;
+    max-width: 300px;
+    margin-top: 5%;
 }
 
 
@@ -118,11 +121,30 @@ input::-webkit-input-placeholder  {
 }
 
 
+.footer {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
+@media (max-width:780px) {
+    .row.mob {
+        margin-top: 50%;
+    }
 
-
+    .contenedor_titulo img {
+        top: 31%;
+    }
+    .logo-cerveza img {
+        margin-left: 6%!important;
+        margin-top: 0!important;
+        position: absolute;
+        top: 24%;
+    }
+}
 
 
 
