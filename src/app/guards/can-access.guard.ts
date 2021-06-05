@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, CanActivateChild, CanDeactivate, CanLoad, Route, Router, RouterStateSnapshot, UrlSegment, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
-import { CheckService } from './check.service';
+import { CheckService } from '../check.service';
 
 @Injectable({
   providedIn: 'root'
@@ -16,16 +16,12 @@ export class CanAccessGuard implements CanActivate, CanActivateChild, CanDeactiv
   constructor( private _api: CheckService, private router: Router ) { }
 
   canActivate(): boolean{
-
     if(this._api.isLoggedIn()){
-  
       return true;
-   
     }else{
       this.router.navigate(['inicio']);
       return false;
     }
-
   }
 
     
