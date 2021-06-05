@@ -1,7 +1,4 @@
-
-
-
- <section>
+<section>
   <div class="container-fluid">
       <div class="row menu" style="background-color:#2BD8F7; height: 61px;">
           <div class="col-sm-2 col-md-3 col-lg-3 p-0" >
@@ -18,25 +15,25 @@
 
                       <ul class="navbar-nav">
                         <li class="nav-item" >
-                          <a (click)="onClick('section2-bg')" class="nav-link active pointer" aria-current="page" >Nueva Fórmula</a>
+                          <a class="nav-link active pointer" aria-current="page" >Nueva Fórmula</a>
                         </li>
                         <!--li class="nav-item">
                           <a class="nav-link" href="#">Eventos</a>
                         </li-->
                         <li class="nav-item">
-                          <a (click)="onClick('section5-bg')" class="nav-link pointer" >Características</a>
+                          <a class="nav-link pointer" >Características</a>
                         </li>
                         <li class="nav-item">
-                          <a (click)="onClick('section6-bg')" class="nav-link pointer" >Microfiltrado</a>
+                          <a class="nav-link pointer" >Microfiltrado</a>
                         </li>
                         <li class="nav-item">
-                          <a (click)="onClick('section7-bg')" class="nav-link pointer" >Presentaciones</a>
+                          <a class="nav-link pointer" >Presentaciones</a>
                         </li>
                         <!--li class="nav-item">
                           <a (click)="onClick('section8-bg')" class="nav-link pointer" >Filtros</a>
                         </li-->
                         <li class="nav-item">
-                          <a (click)="onClick('section9-bg')" class="nav-link pointer" >Stickers</a>
+                          <a  class="nav-link pointer" >Stickers</a>
                         </li>
                       </ul>
 
@@ -57,39 +54,16 @@
   <br><br><br>
   <div class="container">
     <div class="content">
-  
-  
-  
-      <div class="center">
+    
+    <div class="center">
         <img class="letra-winner" src="../../assets/winner/felicidades-ganste.png" alt="felicidades ganaste!">
     </div>
     
-  
-  
     <div class="center flex-center">
-      <!-- <form  >
-          <input type="text"  [(ngModel)]="nombre" name="nombre" placeholder="Nombre completo"/>
-          <input type="text"  [(ngModel)]="apellido" name="apellido" placeholder="Apellidos"/>
-          <input 
-          type="email" class="form-control" [(ngModel)]="email"  placeholder="Correo electronico"/>
-          <input 
-           type="text" class="form-control"  [(ngModel)]="cui" name="cui" placeholder="CUI" minlength="13"  maxlength="13"/>
-
-          <input 
-          type="text"  class="form-control"  placeholder="Telefono" [(ngModel)]="telefono"  name="telefono"  minlength="8"  maxlength="8"  pattern="/[^0-9]/g, ''"/>
-          <input type="text"  [(ngModel)]="direccion" name="direccion" placeholder="Direccion"/>
-          <button class="btn btn-danger" (click)="sendPromotion()"> enviar </button>
-      </form> -->
-
-
-
-
-
-
 
       <form [formGroup]="contactForm" (ngSubmit)="onSendPromotion()">
         <input type="text"  formControlName="Nombre" placeholder="Nombre completo"/>
-          <input type="text" formControlName="Apellido" name="apellido" placeholder="Apellidos"/>
+        <input type="text" formControlName="Apellido" name="apellido" placeholder="Apellidos"/>
 
         <input type="text" formControlName="CUI" placeholder="CUI" minlength="13"  maxlength="13"/>
         <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
@@ -97,27 +71,23 @@
             CUI es requerido.
           </div>
           <div class="container-error-message" *ngIf="CUI.errors.minlength">
-           CUI debe tener 13 caracteres.
+          CUI debe tener 13 caracteres.
           </div>
         </div>
     
         <input type="text" formControlName="Email" placeholder="Correo electrónico">
-    
         <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
           <div class="container-error-message" *ngIf="Email.errors.required">
            Correo es requerido
           </div>
-
           <div class="container-error-message"
             *ngIf="(Email.dirty || Email.touched) && Email.invalid && Email.errors.pattern">
             No es un correo valido.
           </div>
         </div>
 
-
         <input type="text" formControlName="telefono" placeholder="Teléfono" minlength="8"  maxlength="8"
         onKeypress="if(event.charCode >= 48 && event.charCode <= 57){return true;}return false;"/>
-    
         <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
           <div class="container-error-message" *ngIf="telefono.errors.required">
             Telephone es requerido
@@ -127,42 +97,14 @@
           </div>
         </div>
 
-
         <input type="text"  formControlName="Direccion" name="direccion" placeholder="Dirección"/>
-
-
-        <!-- <textarea formControlName="Telefono" placeholder="Type your message"></textarea>
-        <div class="alert-danger" *ngIf="Telefono.invalid && (Telefono.dirty || Telefono.touched)">
-          <div class="container-error-message" *ngIf="Telefono.errors.required">
-            Message is required
-          </div>
-          <div class="container-error-message" *ngIf="Telefono.errors.minlength">
-            Message must be at least 10 characters long.
-          </div>
-        </div> -->
-
-
-        <!-- <button type="submit" class="btn-send" [disabled]="!contactForm.valid">Send</button> -->
         <button type="submit" class="btn btn-danger" [disabled]="!contactForm.valid" > Enviar </button>
       </form>
 
-
-
-
-
-      
-
-
-
-
    </div>
-  
-  
   
   
     </div>
   </div>
   <br><br><br>
 </section>
-
-
