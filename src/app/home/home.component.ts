@@ -102,7 +102,7 @@ message;
     const dialogRef = this.dialog.open(ModalMessage2Component, {
       width: '600px',
       // height: '400px',
-      disableClose: true
+      disableClose: false
     });
   }
 
@@ -115,7 +115,7 @@ message;
     const dialogRef = this.dialog.open(ModalMessage3Component, {
       width: '600px',
       // height: '400px',
-      disableClose: true
+      disableClose: false
     });
   }
 
