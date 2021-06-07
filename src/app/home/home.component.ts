@@ -55,7 +55,7 @@ message;
     // this.surprise();
     // this.modal();   
     // this.cookieService.set( 'promotion', 'Victoria Frost');
-    this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+    this.http.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
       this.ipAddress = res.ip;
    
       this._api.getPromotion(this.ipAddress).subscribe(data=>{
