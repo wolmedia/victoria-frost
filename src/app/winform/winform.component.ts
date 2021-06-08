@@ -25,7 +25,11 @@ export class WinformComponent implements OnInit {
     public dialog: MatDialog
   ) { this.contactForm = this.createForm(); }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if(!this._api.isPromotionIn()){
+      window.location.reload();
+    }
+  }
 
   public onClick(elementId: string): void { 
      this.viewportScroller.scrollToAnchor(elementId);
