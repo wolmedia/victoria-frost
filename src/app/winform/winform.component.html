@@ -62,32 +62,31 @@
     <div class="center flex-center">
 
       <form [formGroup]="contactForm" (ngSubmit)="onSendPromotion()">
+       
         <input type="text"  formControlName="Nombre" placeholder="Nombre completo"/>
         <input type="text" formControlName="Apellido" name="apellido" placeholder="Apellidos"/>
 
-        <input type="text" formControlName="CUI" placeholder="CUI" minlength="13"  maxlength="13"/>
+        <input type="text" formControlName="CUI" placeholder="CUI" minlength="14"  maxlength="14"/>
+        
         <div class="alert-danger" *ngIf="CUI.invalid && (CUI.dirty || CUI.touched)">
-          <div class="container-error-message" *ngIf="CUI.errors.required">
-            CUI es requerido.
-          </div>
-          <div class="container-error-message" *ngIf="CUI.errors.minlength">
-          CUI debe tener 13 caracteres.
-          </div>
+          <div class="container-error-message" *ngIf="CUI.errors.required || !CUI.errors.validarCedula">CUI es requerido.</div>
+          <!-- <div class="container-error-message" *ngIf="CUI.errors.minlength">Debe tener 14 caracteres.</div> -->
+          <div class="container-error-message" *ngIf="!CUI.errors.required && CUI.errors.validarCedula ">CUI incorrecto.</div>
         </div>
     
         <input type="text" formControlName="Email" placeholder="Correo electrónico">
+
         <div class="alert-danger" *ngIf="Email.invalid && (Email.dirty || Email.touched)">
-          <div class="container-error-message" *ngIf="Email.errors.required">
-           Correo es requerido
-          </div>
+          <div class="container-error-message" *ngIf="Email.errors.required">Correo es requerido.</div>
           <div class="container-error-message"
             *ngIf="(Email.dirty || Email.touched) && Email.invalid && Email.errors.pattern">
-            No es un correo valido.
+            Correo no válido.
           </div>
         </div>
 
         <input type="text" formControlName="telefono" placeholder="Teléfono" minlength="8"  maxlength="8"
         onKeypress="if(event.charCode >= 48 && event.charCode <= 57){return true;}return false;"/>
+       
         <div class="alert-danger" *ngIf="telefono.invalid && (telefono.dirty || telefono.touched)">
           <div class="container-error-message" *ngIf="telefono.errors.required">
             Telephone es requerido
@@ -106,5 +105,5 @@
   
     </div>
   </div>
-  <br><br><br>
+
 </section>

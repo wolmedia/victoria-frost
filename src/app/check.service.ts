@@ -30,10 +30,10 @@ export class CheckService {
     return !!this.cookieService.get('promotion');
   }
 
-  getPromotion(ip){
+  async getPromotion(ip){
     this.headers.append("Access-Control-Allow-Methods","GET, POST");
     this.headers.append("Access-Control-Allow-Origin","*");
-    return this.http.get(this.url+ip)
+    return  this.http.get( this.url+ip)
   }
 
   postPromotion(ip, data){

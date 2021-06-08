@@ -21,3 +21,55 @@ background: url(../../../assets/winner/fondo-ccongelado.jpg);
 background-repeat: no-repeat;
 background-size: cover; 
 }
+
+/* @media (max-width: 720px){
+  ::ng-deep .cdk-overlay-pane{
+
+    max-width: 100vw;
+    width: 600px;
+    position: static;
+    min-width: 130vw;
+  
+  }
+} */
+
+
+
+
+
+
+@media (max-width: 765px){
+  ::ng-deep .cdk-overlay-pane{
+
+    max-width: 100vw;
+    width: 600px;
+    position: static;
+    min-width: 100vw;
+  
+  }
+}
+
+
+
+@media (max-width: 812px){
+  ::ng-deep .cdk-overlay-pane{
+
+    max-width: 100vw;
+    width: 600px;
+    position: static;
+    min-width: 130vw;
+  
+  }
+}
+
+
+@media (max-width: 813px) and (orientation: landscape){
+  ::ng-deep .cdk-overlay-pane{
+
+    max-width: 100vw;
+    width: 600px;
+    position: static;
+    /* min-width: 130vw; */
+  
+  }
+}

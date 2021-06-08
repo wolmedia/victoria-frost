@@ -49,23 +49,20 @@ export class HomeComponent implements OnInit {
 data:any;
 ganador:any;
 message;
-  getIPAddress()
+async getIPAddress()
   {
-    // this.cookieService.set( 'promotion', 'Victoria Frost');
-    // this.surprise();
-    // this.modal();   
-    // this.cookieService.set( 'promotion', 'Victoria Frost');
-    this.http.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
+
+    this.http.get("https://api.ipify.org/?format=json").subscribe(async (res:any)=>{
       this.ipAddress = res.ip;
    
-      this._api.getPromotion(this.ipAddress).subscribe(data=>{
+        (await this._api.getPromotion(this.ipAddress)).subscribe(data=>{
         this.data = data;
         this.ganador = this.data.ganador;
         this.message = this.data.mensaje;
     
 
         if(this.ganador==true && this.message==1){
-          this.surprise();
+          // this.surprise();
           this.modalWinner();
           this.cookieService.set( 'promotion', 'Victoria Frost', {expires: 0.1, sameSite: 'Lax'});
         }
@@ -136,8 +133,7 @@ message;
     myConfetti({
       particleCount: 100,
       spread: 160
-      // any other options from the global
-      // confetti function
+
     });
 
     myConfetti();
