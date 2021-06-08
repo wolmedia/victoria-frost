@@ -71,7 +71,7 @@ export class WinformComponent implements OnInit {
       this.contactForm.value
       this.data = this.contactForm.value;
 
-      this.http.get("http://api.ipify.org/?format=json").subscribe((res:any)=>{
+      this.http.get("https://api.ipify.org/?format=json").subscribe((res:any)=>{
         this.ipAddress = res.ip;
           this._api.postPromotion(this.ipAddress,this.data).subscribe(data=>{      
             this.result = data;
