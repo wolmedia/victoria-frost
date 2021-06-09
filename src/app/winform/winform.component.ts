@@ -27,7 +27,7 @@ export class WinformComponent implements OnInit {
 
   ngOnInit(): void {
     if(!this._api.isPromotionIn()){
-      window.location.reload();
+      window.location.reload(true);
     }
   }
 

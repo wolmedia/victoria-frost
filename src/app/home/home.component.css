@@ -28,7 +28,7 @@ main {overflow: hidden;}
     justify-content: space-between;
     /* padding-top: .5rem;
     padding-bottom: 5.5rem; */
-    background-image: url(../../assets/home_page/header/Pleca_Header.png);
+    /* background-image: url(../../assets/home_page/header/Pleca_Header.png); */
 }
 
 .nav-link{
@@ -106,7 +106,7 @@ width: 100%;
   }
 
   ul.navbar-nav {
-    max-width: 510px;
+    /* max-width: 510px; */
     margin: 0 auto;
 }
 
@@ -327,6 +327,12 @@ a.nav-link:active {
         height: 50px;
     }
 }
+
+.redes{
+    /* width: 100%; */
+    max-width: 35px;
+}
+
 
 @media(max-width:780px){
     
