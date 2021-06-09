@@ -87,7 +87,7 @@ async getIPAddress()
     const dialogRef = this.dialog.open(ModalWinnerComponent, {
       width: '600px',
       // height: '400px',
-      disableClose: true
+      disableClose: false
     });
   }
 
